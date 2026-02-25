@@ -1,120 +1,175 @@
-body{
+/* =====================================
+   Global Styles
+===================================== */
+
+body {
     font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
     margin: 0;
+    background-color: #f8f8f8;
+    color: #222;
+    line-height: 1.6;
 }
 
-/*** Header */
-header{
-    background-color: #eaeaea;
-    padding: rem 10px;
+/* =====================================
+   Header
+===================================== */
+
+header {
+    background-color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
 }
+
 header span {
-    color:#024873;
     font-size: 1.6rem;
     font-weight: 700;
+    letter-spacing: 1px;
 }
 
+/* =====================================
+   Navigation
+===================================== */
 
-/* navagation stuff here */
-nav{
-background-color: #f2b705;
+nav {
+    background-color: #111;
 }
-nav ul{
+
+nav ul {
     margin: 0;
-    padding: 0 10px;
+    padding: 0 1.5rem;
     list-style-type: none;
-    display: flex;
+    display: flex; /* Flexbox horizontal menu */
 }
+
+nav li {
+    margin-right: 1rem;
+}
+
 nav a {
-    display: block;
-    padding: .83rem 1rem;
-    text-decoration: none;
-    font-size: 1.1rem;
-    color: #024873;
+    display: flex;
+    align-items: center;
+    height: 48px; /* Minimum height requirement */
+    padding: 0 1rem;
+    text-decoration: none; /* Remove underline */
     font-weight: 700;
+    font-size: 1rem;
+    color: #ffffff;
 }
 
 nav li.active a {
-    background-color: #024873;
-    color: #f2b705;
+    background-color: #ffffff;
+    color: #111;
+    border-radius: 4px;
 }
 
-nav li a:hover {
-    color: white;
+nav a:hover {
+    background-color: #333;
 }
 
-/* main content */
-main{
-    padding: 1rem 10px;
+/* =====================================
+   Main Content
+===================================== */
+
+main {
+    padding: 2rem 1.5rem;
+    max-width: 900px;
 }
+
+/* Headings */
 
 main h1 {
-    color: #840412;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 main h2 {
-    color: #024873;
-    margin-bottom: .2rem;
-}   
-main p {
-    margin: 0;
-    color: #333;
-}
-main ol {
-    padding: .5rem 30px;
-    background-color: #efefef;
-}
-main dl dt {
-    color: #b40412;
+    font-size: 1.3rem;
     font-weight: 700;
-    margin-top: 1rem
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+
+/* Paragraphs */
+
+main p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* Ordered List */
+
+main ol {
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* Unordered List */
+
+main ul {
+    list-style-type: square; /* Changed bullet style */
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+main ul li {
+    margin-bottom: .5rem;
+}
+
+/* Definition List */
+
+main dl {
+    margin-top: 1rem;
+}
+
+main dl dt {
+    font-weight: 700;
+    margin-top: 1rem;
 }
 
 main dl dd {
-color:#024873;
-font-size: .9rem;
-margin-left: 20px;
-}
-main ul {
-    list-style-type: circle;
-}
-main ul li {
-    line-height: 125%;
+    margin-left: 1rem;
     margin-bottom: .5rem;
-    font-size: .9rem;
-}
-main strong{
-    font-weight: 700;
-    color: black;
 }
 
-main em{
-    font-weight: 300;
-}
-main address{
-    font=style: normal;
-    background-color: #f2b705;
-    padding: .5rem;
-    border-radius: 10px;
-    border: 1px solid #024873;
-    width: 200px;
-}
+/* Links */
+
 main a {
-    color:#024873
+    color: #000;
 }
+
 main a:hover {
-    color: rgb(180, 4, 18);
+    color: #555;
 }
-/* footer stuff here */
-footer{
-    background-color:#eaeaea
+
+/* Address */
+
+main address {
+    font-style: normal;
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 1px solid #111; /* Border color, type, thickness */
+    border-radius: 8px; /* Border radius requirement */
+    width: 260px;
+}
+
+/* =====================================
+   Footer
+===================================== */
+
+footer {
+    background-color: #ffffff;
     text-align: center;
     padding: 1rem 0;
-
+    border-top: 1px solid #e0e0e0;
 }
+
 footer p {
     margin: 0;
     font-size: .8rem;
-    color: #333;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
