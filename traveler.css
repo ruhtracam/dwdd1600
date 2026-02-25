@@ -1,0 +1,175 @@
+/* =====================================
+   Global Styles
+===================================== */
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    background-color: #f8f8f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* =====================================
+   Header
+===================================== */
+
+header {
+    background-color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header span {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* =====================================
+   Navigation
+===================================== */
+
+nav {
+    background-color: #111;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 1.5rem;
+    list-style-type: none;
+    display: flex; /* Flexbox horizontal menu */
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    height: 48px; /* Minimum height requirement */
+    padding: 0 1rem;
+    text-decoration: none; /* Remove underline */
+    font-weight: 700;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+nav li.active a {
+    background-color: #ffffff;
+    color: #111;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #333;
+}
+
+/* =====================================
+   Main Content
+===================================== */
+
+main {
+    padding: 2rem 1.5rem;
+    max-width: 900px;
+}
+
+/* Headings */
+
+main h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+main h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+
+/* Paragraphs */
+
+main p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* Ordered List */
+
+main ol {
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* Unordered List */
+
+main ul {
+    list-style-type: square; /* Changed bullet style */
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+main ul li {
+    margin-bottom: .5rem;
+}
+
+/* Definition List */
+
+main dl {
+    margin-top: 1rem;
+}
+
+main dl dt {
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+main dl dd {
+    margin-left: 1rem;
+    margin-bottom: .5rem;
+}
+
+/* Links */
+
+main a {
+    color: #000;
+}
+
+main a:hover {
+    color: #555;
+}
+
+/* Address */
+
+main address {
+    font-style: normal;
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 1px solid #111; /* Border color, type, thickness */
+    border-radius: 8px; /* Border radius requirement */
+    width: 260px;
+}
+
+/* =====================================
+   Footer
+===================================== */
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+footer p {
+    margin: 0;
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
