@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Contact form for Macarthur Reilly design inquiries">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Macarthur Reilly | Contact</title>
+  <link rel="stylesheet" href="delivery.css">
+</head>
+<body>
+
+<header>
+  <h1>Macarthur Reilly</h1>
+  <p>Strategic and minimal design</p>
+</header>
+
+<nav>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="request.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h2>Contact</h2>
+  <p>Fill out the form below for project inquiries.</p>
+
+  <form method="get" action="thanks.html" class="site-form">
+
+    <fieldset>
+      <legend>Contact Info</legend>
+
+      <label for="fullname">Full Name *</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone *</label>
+      <input type="tel" id="phone" name="phone" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Project Type</legend>
+
+      <p class="group-label">What kind of project is this?</p>
+
+      <label class="choice" for="branding">
+        <input type="radio" id="branding" name="projecttype" value="Branding">
+        Branding
+      </label>
+
+      <label class="choice" for="illustration">
+        <input type="radio" id="illustration" name="projecttype" value="Illustration">
+        Illustration
+      </label>
+
+      <label class="choice" for="otherproject">
+        <input type="radio" id="otherproject" name="projecttype" value="Other">
+        Other
+      </label>
+
+      <label for="budget">Budget Range</label>
+      <select id="budget" name="budget">
+        <option value="50-100">$50 to $100</option>
+        <option value="100-300">$100 to $300</option>
+        <option value="300plus">$300+</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Project Details</legend>
+
+      <p class="group-label">What do you need?</p>
+
+      <label class="choice" for="rush">
+        <input type="checkbox" id="rush" name="extras" value="Rush Job">
+        Rush Job
+      </label>
+
+      <label class="choice" for="printready">
+        <input type="checkbox" id="printready" name="extras" value="Print Ready">
+        Print Ready Files
+      </label>
+
+      <label class="choice" for="digitalonly">
+        <input type="checkbox" id="digitalonly" name="extras" value="Digital Only">
+        Digital Only
+      </label>
+
+      <label for="message">Project Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..."></textarea>
+    </fieldset>
+
+    <input type="submit" value="Submit" class="submit-button">
+  </form>
+</main>
+
+<footer>
+  <p>&copy; 2026 Macarthur Reilly</p>
+</footer>
+
+</body>
+</html>

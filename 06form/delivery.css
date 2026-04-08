@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #f4f4f4;
+  color: #111;
+}
+
+header,
+nav,
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background: linear-gradient(to right, #ffffff, #dddddd);
+  padding: 1.25rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 0.35rem 0 0;
+}
+
+nav {
+  background-color: #111;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.menu a {
+  display: block;
+  padding: 0.85rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover,
+.menu a.active {
+  background-color: #444;
+}
+
+main {
+  background-color: white;
+  padding: 1.5rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.main-image {
+  margin: 0 0 1.5rem 0;
+}
+
+.main-image img {
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* form */
+.site-form {
+  max-width: 720px;
+}
+
+.site-form fieldset {
+  margin: 0 0 1.5rem 0;
+  padding: 1rem;
+  border: 2px solid #cfcfcf;
+  border-radius: 12px;
+  background-color: #fafafa;
+}
+
+.site-form legend {
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+  background-color: #111;
+  color: white;
+  font-weight: bold;
+}
+
+.site-form label {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.site-form input[type="text"],
+.site-form input[type="email"],
+.site-form input[type="tel"],
+.site-form select,
+.site-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.75rem;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  background-color: white;
+  color: #111;
+  font: inherit;
+}
+
+.site-form textarea {
+  resize: vertical;
+}
+
+.group-label {
+  margin: 0 0 0.75rem 0;
+  font-weight: bold;
+}
+
+.choice {
+  display: block;
+  margin-bottom: 0.65rem;
+}
+
+.choice input {
+  margin-right: 0.5rem;
+}
+
+.submit-button {
+  border: 1px solid #111;
+  border-radius: 10px;
+  padding: 0.85rem 1.25rem;
+  background-color: #111;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #333;
+}
+
+.thanks-box {
+  max-width: 700px;
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
+
+  .menu li {
+    border-bottom: none;
+  }
+
+  .menu a {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .menu li:last-child a {
+    border-right: none;
+  }
+}
