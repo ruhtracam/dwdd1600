@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Delivery</title>
+  <link rel="stylesheet" href="delivery.css">
+</head>
+
+<body>
+
+<header>
+  <span>Drone Delivery</span>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">About Us</a></li>
+    <li class="active"><a href="request.html">Request a Delivery</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h1>Request a Delivery</h1>
+
+  <form method="get" action="thanks.html" class="form">
+
+    <!-- FIELDSET 1 -->
+    <fieldset>
+      <legend>Customer Info</legend>
+
+      <label>
+        Full Name *
+        <input type="text" name="name" required>
+      </label>
+
+      <label>
+        Email *
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        Phone *
+        <input type="tel" name="phone" required>
+      </label>
+    </fieldset>
+
+    <!-- FIELDSET 2 -->
+    <fieldset>
+      <legend>Delivery Details</legend>
+
+      <label>
+        Delivery Type
+        <select name="type">
+          <option>Food</option>
+          <option>Medical</option>
+          <option>Package</option>
+        </select>
+      </label>
+
+      <p>Speed Preference</p>
+
+      <label><input type="radio" name="speed" value="standard"> Standard</label>
+      <label><input type="radio" name="speed" value="fast"> Fast</label>
+      <label><input type="radio" name="speed" value="express"> Express</label>
+    </fieldset>
+
+    <!-- FIELDSET 3 -->
+    <fieldset>
+      <legend>Extras</legend>
+
+      <label><input type="checkbox" name="extras" value="fragile"> Fragile Handling</label>
+      <label><input type="checkbox" name="extras" value="signature"> Signature Required</label>
+      <label><input type="checkbox" name="extras" value="insurance"> Insurance</label>
+
+      <label>
+        Notes
+        <textarea name="notes" rows="5"></textarea>
+      </label>
+    </fieldset>
+
+    <input type="submit" value="Submit Request" class="submit">
+
+  </form>
+</main>
+
+<footer>
+  <p>&copy; Drone Delivery</p>
+</footer>
+
+</body>
+</html>
